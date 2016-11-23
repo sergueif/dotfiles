@@ -16,6 +16,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -42,6 +44,7 @@ filetype plugin indent on    " required
 
 
 
+let mapleader=","
 syntax on
 let g:jsx_ext_required = 0
 let g:jsx_pragma_required = 0
@@ -50,3 +53,12 @@ colorscheme solarized
 set expandtab
 set shiftwidth=2
 set tabstop=2
+nmap <leader>N :NERDTreeFind<CR>
+nmap <leader>n :NERDTreeToggle<CR>
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(node_modules|git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
