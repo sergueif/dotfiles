@@ -18,6 +18,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -62,3 +63,4 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+set number
