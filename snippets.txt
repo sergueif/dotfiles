@@ -1,0 +1,34 @@
+
+import { expect } from 'chai';
+import React from 'react';
+import {
+  renderIntoDocument,
+  findRenderedDOMComponentWithClass
+} from 'react-addons-test-utils';
+import Hello from '../../src/components/Hello';
+
+describe("Hello", () => {
+  it("says hello", () => {
+    const component = renderIntoDocument(
+      <Hello
+      counter={7} actions={{plus: null, minus: null}}
+      />
+    );
+    const todoEle = findRenderedDOMComponentWithClass(component, 'hello__headline');
+
+    expect(todoEle.textContent).to.contain("Hello, world 7");
+  });
+});
+
+  it("TEMPLATE_ACTION", () => {
+    var oldState = fromJS({counter: 3});
+
+    var action = {type: "PLUS"};
+
+    var reducer = ((state, action) => state.update('counter', i => i+1))
+    var newState = reducer(oldState, action);
+
+    var expected = fromJS({counter: 4});
+
+    expect(newState).to.eql(expected);
+  });

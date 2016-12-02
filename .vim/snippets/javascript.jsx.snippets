@@ -1,0 +1,17 @@
+snippet newcomponent
+	import React, { Component } from 'react';
+	require('../css/components/${1:shortname}.scss');
+	
+	class ${2:Tallname} extends Component {
+	  render() {
+	    let { actions, components, propProvider } = this.props;
+	
+	    return (
+	      <div className="${1:shortname}">
+	        <h1 className="${1:shortname}__headline">Hello</h1>
+	      </div>
+	    );
+	  }
+	}
+	
+	module.exports = ${2:Tallname};
