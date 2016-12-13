@@ -6,7 +6,7 @@ snippet newcomponent
 	    let { actions, components, propProvider } = this.props;
 	    return (
 	      <div className="$2">
-	      <h1 className="$2__headline">Hello</h1>
+	      <h1 className="$2__headline">$1</h1>
 	      </div>
 	    );
 	  }
@@ -18,7 +18,15 @@ snippet newcomponent
 
 	module.exports = $1;
 
-snippet testsnip
-	asdf${1:comp}fdsa
-	  fdsa $1
+snippet propProvider.spec
+	let data = fromJS({${1}})
+	let propProvider = PropProvider(data, 'actions')
+	let props = propProvider.${2}();
+	let expectedProps = {
+		${3},
+	  actions: 'actions',
+	  propProvider: propProvider
+	}
+	
+	expect(props).to.eql(expectedProps);
 

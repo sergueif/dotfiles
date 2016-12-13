@@ -71,3 +71,4 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 set number
 set foldmethod=syntax
 autocmd FileType javascript.jsx :setlocal foldmethod=indent
+nmap <C-j> i<CR><Esc><C-o>
