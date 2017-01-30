@@ -1,20 +1,22 @@
 snippet newcomponent
 	import React, { Component } from 'react';
+
 	require('../css/components/${2:shortname}.scss');
+
 	class ${1:tallname} extends Component {
 	  render() {
 	    let { actions, components, propProvider } = this.props;
 	    return (
 	      <div className="$2">
-	      <h1 className="$2__headline">$1</h1>
+	        <h1 className="$2__headline">$1</h1>
 	      </div>
 	    );
 	  }
 	}
 
-	const T = React.PropTypes
+	const T = React.PropTypes;
 	$1.propTypes = {
-	}
+	};
 
 	module.exports = $1;
 
