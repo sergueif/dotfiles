@@ -10,7 +10,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-syntastic/syntastic'
 Plugin 'pangloss/vim-javascript'
