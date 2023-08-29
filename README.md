@@ -7,7 +7,7 @@ My public dotfiles and keyboard shortcuts
 ### Navigating to vs Moving things
 `h` and `l` refer to navigating between left and right
 
-`[` and `]` refer to moving things left and right
+moving things left/right is done via adding a mod key (e.g. Shift)
 
 Up/Down direction I'm less decided on. Most things are left/right, but drop-downs and menus are up-down which is important.
 
@@ -30,21 +30,21 @@ hence different combos of mod keys separate out what are we navigating to or mov
 | X    |       |     |     | c       | global copy                         |
 |      | X     |     |     | h       | vim goto buffer left                |
 |      | X     |     |     | l       | vim goto buffer right               |
-| pref |       |     |     | h       | tmux goto window left               |
-| pref |       |     |     | l       | tmux goto window right              |
-| X    | X     |     |     | h       | kitty/terminal goto tab left        |
-| X    | X     |     |     | l       | kitty/terminal goto tab right       |
-|      |       | X   |     | \[      | move window to left half of screen  |
-|      |       | X   |     | \]      | move window to right half of screen |
+|  |       |     |  x   | h       | tmux goto window left               |
+|  |       |     |  x   | l       | tmux goto window right              |
+| X    |      |     |     | h       | kitty/terminal goto tab left        |
+| X    |      |     |     | l       | kitty/terminal goto tab right       |
+|      |       | X   |     | h      | move window to left half of screen  |
+|      |       | X   |     | l      | move window to right half of screen |
 |      |       | X   |     | m       | maximize window within screen       |
-| X    |       | X   |     | \[      | move window to monitor left         |
-| X    |       | X   |     | ]       | move window to monitor right        |
-|      |       |     | X   | h       | goto workspace left                 |
-|      |       |     | X   | l       | goto workspace right                |
-|      |       |     | X   | \<num\> | goto workspace \<num\>              |
-|      |       |     | X   | \[      | move window to workspace left       |
-|      |       |     | X   | \]      | move window to workspace right      |
-|      | X     |     | X   | \<num\> | move window to workspace \<num\>    |
+|     |  x     | X   |     | \[      | move window to monitor left         |
+|     |  x     | X   |     | ]       | move window to monitor right        |
+|  x    |       | x    |    | h       | goto workspace left                 |
+|  x    |       | x   |    | l       | goto workspace right                |
+|  x    |       | x    |    | \<num\> | goto workspace \<num\>              |
+|  x    | x      |  x   |    | \[      | move window to workspace left       |
+|  x    | x      |  x   |    | \]      | move window to workspace right      |
+|  x    | X     |  x   |   | \<num\> | move window to workspace \<num\>    |
 
 ### Misc notes
 Ctrl - Taken by a lot of apps (e.g. Ctrl-c, etc.)
@@ -80,5 +80,3 @@ Shift+Opt+Cmd
 ##### 4-key combos:
 Shift+Ctrl+Opt+Cmd ("Smash!")
 
-# dotfiles
-My public dotfiles and keyboard shortcuts
